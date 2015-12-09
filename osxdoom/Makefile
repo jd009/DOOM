@@ -6,9 +6,10 @@
 #
 CC=  gcc  # gcc or g++
 
-#CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM #JD Removed DLINUX
-CFLAGS=-g -Wall -DNORMALUNIX # -DUSEASM 
-LDFLAGS=-L/usr/X11R6/lib
+#PORTJD Removed DLINUX
+#CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM
+CFLAGS=-g -I/usr/X11R6/include -Wall -DNORMALUNIX # -DUSEASM
+LDFLAGS=-L/usr/X11R6/lib 
 LIBS=-lXext -lX11 -lnsl -lm
 
 # subdirectory for objects

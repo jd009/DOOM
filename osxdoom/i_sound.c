@@ -42,7 +42,8 @@ rcsid[] = "$Id: i_unix.c,v 1.5 1997/02/03 22:45:10 b1 Exp $";
 #include <sys/ioctl.h>
 
 // Linux voxware output.
-#include <linux/soundcard.h>
+//PORTJD - not available on OSX
+//#include <linux/soundcard.h>
 
 // Timer stuff. Experimental.
 #include <time.h>
